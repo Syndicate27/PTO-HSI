@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us" id="webpage">
+	<head>
+		<title>HSI PTO PAGE</title>
+		<meta name="Jeremiah Nji & Robert V." content="Parent Teacher Organization" description="Harmony Public Schools PTO">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="PTO_Home.css">
+		<!-- Begin Navigation Bar-->
+		<nav id="navbar">
+			<ul>
+				<li><a href="PTO_Home.html"><b>Home</b></a></li>
+				<li><a href="#AboutUs"><b>About Us</b></a></li>
+				<li><a href="#Members"><b>Members</b></a></li>
+				<li><a href="PTO_ContactUs.html"><b>Contact Us</b></a>></li>
+			</ul>
+		</nav>
+		<!--End Navigation Bar-->
+	</head>
+	<body>
+		<!--Begin Image Slider-->
+		<div id="img_slider">
+			<img class="slides" src="images/1.jpg"> <!-- Images need to have dimensions of 800px by 500px -->
+			<img class="slides" src="images/2.jpg">
+			<img class="slides" src="images/3.jpg">
+				<div class="center_buttons">
+					<div class="left_button" onclick="plusDivs(-1)">&#10094;</div>
+					<div class="right_button" onclick="plusDivs(+1)">&#10095;</div>
+					<span class="white_hover" onclick="currentDiv(1)"></span>
+    				<span class="white_hover" onclick="currentDiv(2)"></span>
+    				<span class="white_hover" onclick="currentDiv(3)"></span>
+				</div>
+		</div>
+		<!-- Begin Javascript to Control Image Slider-->
+		<script>
+			var slideIndex = 0;
+			carousel();
+
+			function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("slides");
+		    for (i = 0; i < x.length; i++) {
+		      x[i].style.display = "none"; 
+		    }
+		    slideIndex++;
+		    if (slideIndex > x.length) {slideIndex = 1} 
+		    x[slideIndex-1].style.display = "block"; 
+		    setTimeout(carousel, 4000); // Change image every 2 seconds
+			}
+		</script>
+		<!-- End Javascript to Control Image Slider-->
+		<!--Begin Focus Container-->
+		<div class="container">
+			<h1>FOCUS</h1>
+			<table class="focus">
+				<tr>
+					<th>Involvememnt</th>
+					<th>Students</th>
+					<th>Community</th>
+				</tr>
+			</table>
+		</div>
+		<!--End Focus Container-->
+		<!-- Begin *blank* container -->
+		<div class="container">
+			
+		</div>
+		<!-- end of *blank* container-->
+
+
+
+	</body>
+	<footer id="fcontainer">
+		<p> This website is copyright &copy 2016</p>
+		<p> This website is strucutred for the <b>PTO</b> of <strong>Harmony School of Innovation</strong></p>
+		<p> Website Developers: <strong>Jeremiah Nji & Robert Vinjolli</strong></p>
+	</footer>
+</html>
