@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" id="webpage">
 	<head>
-		<title>HSI PTO PAGE</title>
+		<title>HSI PTO | Homepage</title>
 		<meta name="Jeremiah Nji & Robert V." content="Parent Teacher Organization" description="Harmony Public Schools PTO">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="PTO_Home.css">
@@ -9,8 +9,8 @@
 		<nav id="navbar">
 			<ul>
 				<li><a href="PTO_Home.html"><b>Home</b></a></li>
-				<li><a href="#AboutUs"><b>About Us</b></a></li>
-				<li><a href="#Members"><b>Members</b></a></li>
+				<li><a href="PTO_AboutUs.html"><b>About Us</b></a></li>
+				<li><a href="PTO_Members.html"><b>Members</b></a></li>
 				<li><a href="PTO_ContactUs.html"><b>Contact Us</b></a>></li>
 			</ul>
 		</nav>
@@ -19,9 +19,10 @@
 	<body>
 		<!--Begin Image Slider-->
 		<div id="img_slider">
-			<img class="slides" src="images/1.jpg"> <!-- Images need to have dimensions of 800px by 500px -->
-			<img class="slides" src="images/2.jpg">
+			<img class="slides" src="images/home_slide.jpg">
+			<img class="slides" src="images/4.jpg"> 
 			<img class="slides" src="images/3.jpg">
+			<img class="slides" src="images/6.jpg">
 				<div class="center_buttons">
 					<div class="left_button" onclick="plusDivs(-1)">&#10094;</div>
 					<div class="right_button" onclick="plusDivs(+1)">&#10095;</div>
@@ -44,30 +45,24 @@
 		    slideIndex++;
 		    if (slideIndex > x.length) {slideIndex = 1} 
 		    x[slideIndex-1].style.display = "block"; 
-		    setTimeout(carousel, 4000); // Change image every 2 seconds
+		    setTimeout(carousel, 10000); // Change image every 10 seconds
 			}
 		</script>
 		<!-- End Javascript to Control Image Slider-->
 		<!--Begin Focus Container-->
-		<div class="container">
+		<div class="container1">
 			<h1>FOCUS</h1>
-			<table class="focus">
-				<tr>
-					<th>Involvememnt</th>
-					<th>Students</th>
-					<th>Community</th>
-				</tr>
-			</table>
+			<p id="focus"><h2><span>Involvement</span><span>Students</span><span>Community</span></h2></p>
+			<a class="focus_attributes"><p><image id="involvement_img" src="images/involvement.jpg"><image id="students_img" src="images/students.jpg"><image id="community_img" src="images/community.jpg"></p></a>
 		</div>
 		<!--End Focus Container-->
-		<!-- Begin *blank* container -->
-		<div class="container">
-			
+		<!--Begin Harmony School of Innovation Hot Link-->
+		<div class="container2">
+			<h1>Harmony School of Innovation</h1>
+			<a href="https://www.hsihouston.org"><image id="logo_link" src="images/harmony_logo.jpg"></a>
+			<p><strong>If you would like to visit the school website click on the logo image above</strong></p>
+
 		</div>
-		<!-- end of *blank* container-->
-
-
-
 	</body>
 	<footer id="fcontainer">
 		<p> This website is copyright &copy 2016</p>
